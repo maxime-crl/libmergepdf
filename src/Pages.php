@@ -91,7 +91,7 @@ class Pages implements \IteratorAggregate
     /**
      * Get iterator of page numbers
      */
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return new \ArrayIterator($this->pages);
     }
